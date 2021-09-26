@@ -1,0 +1,17 @@
+.news-list-cotainer {
+  display: grid;
+  grid-template: "1 1 1";
+  gap: 1em;
+}
+
+@media (max-width: 800px) {
+  .news-list-cotainer {
+    grid-template: "1 1";
+  }
+}
+
+@media (max-width: 600px) {
+  .news-list-cotainer {
+    grid-template: "1";
+  }
+}

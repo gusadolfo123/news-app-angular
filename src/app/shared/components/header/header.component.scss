@@ -1,0 +1,21 @@
+// header {
+//   align-items: center;
+//   background-color: rgb(61, 61, 61);
+//   color: whitesmoke;
+//   display: flex;
+//   height: 40px;
+//   justify-content: center;
+//   position: fixed;
+//   text-align: center;
+//   top: 0px;
+//   width: 100%;
+// }
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-row {
+  color: rgb(199, 199, 199);
+  max-width: 1200px;
+  margin: 0 auto;
+}

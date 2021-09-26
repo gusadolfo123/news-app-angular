@@ -1,0 +1,86 @@
+<mat-toolbar>
+  <span>Nuevo Empleado</span>
+  <mat-icon (click)="onClose()">close</mat-icon>
+</mat-toolbar>
+
+<mat-divider></mat-divider>
+
+<div class="form-container">
+  <form [formGroup]="form" (ngSubmit)="save($event)">
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input
+          matInput
+          formControlName="name"
+          type="text"
+          placeholder="Nombre"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Posicion</mat-label>
+        <input
+          matInput
+          formControlName="position"
+          type="email"
+          placeholder="Posicion"
+        />
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Salario</mat-label>
+        <input
+          matInput
+          formControlName="salary"
+          type="number"
+          placeholder="Salario"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Calle</mat-label>
+        <input
+          matInput
+          formControlName="street"
+          type="text"
+          placeholder="Calle"
+        />
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Numero</mat-label>
+        <input
+          matInput
+          formControlName="number"
+          type="text"
+          placeholder="Numero"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Codigo Postal</mat-label>
+        <input
+          matInput
+          formControlName="postalCode"
+          type="text"
+          placeholder="Codigo Postal"
+        />
+      </mat-form-field>
+    </p>
+
+    <p>
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit"
+        [disabled]="form.invalid"
+      >
+        Crear
+      </button>
+    </p>
+  </form>
+</div>

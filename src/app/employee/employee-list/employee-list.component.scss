@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+}
+
+// td,
+// th {
+//   width: 25%;
+// }
+
+// .row-buttons {
+//   display: flex;
+// }
+
+.example-button-container {
+  display: flex;
+  justify-content: left;
+  gap: 6px;
+  //   width: 120px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
