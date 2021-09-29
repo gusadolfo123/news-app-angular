@@ -58,4 +58,8 @@ export class AddUpdateComponent implements OnInit {
   onClose() {
     this.dialogRef.close();
   }
+
+  hasError(controlName: string, errorName: string) {
+    return this.form.controls[controlName].hasError(errorName);
+  }
 }
